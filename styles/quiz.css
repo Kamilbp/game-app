@@ -6,7 +6,7 @@ body{
   align-items: center;
   background-color: rgb(36, 36, 36);
   justify-content: center;
-  margin: 5vh 20vw 0 20vw;
+  margin: 5vw 20vw 0 20vw;
   border-radius: 2dvh;
   height: 80vh;
   border: solid 5px yellow;
@@ -17,9 +17,9 @@ body{
 }
 .question-container{
   background-color: rgb(40, 47, 58);
-  margin-top: 7vh;
-  margin: 7vh 10vw 0 10vw;
-  padding: 2vh 20vw 2vh 20vw;
+  /* margin-top: 7vh; */
+  margin: 7vw 10vw 0 10vw;
+  padding: 2vw 15vw 2vw 15vw;
   border-radius: 2dvh;
   border: solid 2px yellow;
   color:white
@@ -32,7 +32,7 @@ body{
   justify-content: space-around;
   /* align-content:  space-around; */
   gap: 1vh;
-  margin: 10vh 5vw 10vh 5vw;
+  margin: 2vw 5vw 4vw 5vw;
 }
 
 .answer-box{
