@@ -1,0 +1,18 @@
+body{
+  background-color: rgb(216, 252, 252);
+}
+
+.card{
+  cursor: pointer;
+  border:solid 3px rgb(114, 114, 114);
+  background-color: aliceblue;
+  transition: 0.5s;
+  color: rgb(62, 90, 95)
+
+}
+
+.card:hover{
+  border: solid 3px rgb(14, 64, 77);
+  background-color: rgb(160, 238, 255);
+  color:rgb(23, 61, 77)
+}
