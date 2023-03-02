@@ -6,34 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz</title>
   <link rel="stylesheet" href="../styles/quiz.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wraper">
-    <div class="container">
-      <div class="question-container">
-        <h3 class="question-title">question1</h3>
-        <div class="question">Tekst pytania</div>
+  <div class="flex">
+    <div class="wraper">
+      <div class="container">
+        <div class="question-container">
+          <h3 class="question-title">question1</h3>
+          <div class="question">Tekst pytania</div>
+        </div>
+        <ul class="answers-container">
+          <li>odpowiedz 1</li>
+          <li>odpowiedz 1</li>
+          <li>odpowiedz 1</li>
+          <li>odpowiedz 1</li>
+        </ul>
+  
+        <div id="result">
+  
+        </div>
       </div>
-      <div class="answers-container">
-        <div class="answer-box">
-          <h3>A</h3>
-          <div class="answer">odpowiedz 1</div>
-        </div>
-        <div class="answer-box">
-          <h3>B</h3>
-          <div class="answer">odpowiedz 2</div>
-        </div>
-        <div class="answer-box">
-          <h3>C</h3>
-          <div class="answer">odpowiedz 3</div>
-        </div>
-        <div class="answer-box">
-          <h3>D</h3>
-          <div class="answer">odpowiedz 4</div>
-        </div>
+  
+      <div class="control-buttons">
+        <button type="button" id="check-answer">Sprawdź!</button>
+        <button type="button" id="play-again">Jeszcze raz?</button>
       </div>
     </div>
-
   </div>
 </body>
 </html>
