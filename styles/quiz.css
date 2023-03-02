@@ -129,7 +129,7 @@ button:active{
 }
 
 .modal {
-  width: 30vw;
+  width: 50vw;
   height: 30vh;
   background-color: rgb(36, 36, 36);
   border-radius: 0.5rem;
