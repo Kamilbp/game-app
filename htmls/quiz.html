@@ -11,30 +11,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="result-modal" class="flex">
+    <div class="modal">
+      <h3>Your score:</h3>
+      <p id="result"><span id="correct-count">0</span>/5</p>
+      <button class="" type="button" id="play-again">Jeszcze raz?</button>
+    </div>
+  </div>
+
   <div class="flex">
     <div class="wraper">
       <div class="container">
         <div class="question-container">
-          <h3 class="question-title">question1</h3>
-          <div class="question">Tekst pytania</div>
+          <h3 class="question-title" id="question-title">Question <span id="current-question">1</span>/5</h3>
+          <div class="question" id="question"></div>
         </div>
         <ul class="answers-container">
-          <li>odpowiedz 1</li>
-          <li>odpowiedz 1</li>
-          <li>odpowiedz 1</li>
-          <li>odpowiedz 1</li>
         </ul>
-  
-        <div id="result">
-  
-        </div>
       </div>
-  
+      
       <div class="control-buttons">
         <button type="button" id="check-answer">Sprawdź!</button>
-        <button type="button" id="play-again">Jeszcze raz?</button>
+        
       </div>
     </div>
   </div>
+  <script src="../js/quiz.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

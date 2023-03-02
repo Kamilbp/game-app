@@ -62,7 +62,7 @@ body{
 }
 
 .answers-container li:active{
-  transform: scale(0.97);
+  transform: scale(0.98);
 }
 
 /* selected button */
@@ -71,7 +71,24 @@ body{
   color: rgb(255, 255, 255)!important;
 }
 
-.control-buttons button{
+.correct {
+  background-color: rgba(84, 255, 61, 0.226) !important;
+  color: rgb(255, 255, 255)!important;
+  border-color: rgb(80, 250, 46)!important;
+}
+
+.correct ion-icon{
+  color: green;
+  font-size: 1rem;
+}
+
+.incorrect {
+  background-color: rgba(250, 52, 52, 0.295) !important;
+  color: rgb(255, 255, 255)!important;
+  border-color: rgb(255, 43, 43)!important;
+}
+
+button{
   border: none;
   outline: 0;
   border-radius: 0.2rem;
@@ -88,29 +105,57 @@ body{
   transition: 0.5s;
   display: block;
 }
-.control-buttons button:hover{
+button:hover{
   background-color: rgb(63, 63, 63);
   color: rgb(250, 250, 250);
   transform: scale(1.02);
 }
 
-.control-buttons button:active{
-  transform: scale(0.97);
+button:active{
+  transform: scale(0.98);
 }
-#play-again{
-  display: none;
+/* #play-again{
+  display:
+} */
+#result-modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.719);
+  transition: visibility 0s, opacity 0.5s ease-out;
 }
 
-@media(max-width: 678px){
+.modal {
+  width: 30vw;
+  height: 30vh;
+  background-color: rgb(36, 36, 36);
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-top: -200%;
+  transition: margin-top 1s;
+}
+
+
+#result{
+  font-size: 2rem;
+}
+
+
+@media(max-width: 808px){
   .question-title{
     font-size: 1.6rem;
   }
   .wraper{
-    margin: 2rem;
+    /* margin: 2rem; */
     width: 90%;
-    padding: 1.5rem 1rem 3rem 1rem;
+    padding: 1.5rem 1rem 5rem 1rem;
   }
 }
+
+
 /* .question-container{
   text-align: center;
 } */
