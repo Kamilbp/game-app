@@ -153,6 +153,9 @@ button:active{
     width: 90%;
     padding: 1.5rem 1rem 5rem 1rem;
   }
+  .modal{
+    width: 70vw;
+  }
 }
 
 
